@@ -20,6 +20,8 @@ def getInput():
 janela = tk.Tk()
 janela.geometry("280x180")
 janela.title("Age Calculator")
+janela.resizable(False, False)
+janela.anchor(anchor = "center")
 
 nome = tk.Label(text = "Nome:", height = 2, font = ("comic sans", 14, "bold"))
 nome.grid(column = 0, row = 1)
