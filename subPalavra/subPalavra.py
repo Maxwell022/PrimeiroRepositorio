@@ -1,11 +1,7 @@
 import tkinter as tk
 
 def substituir():
-    frase= campoFrase.get()
-    alvo = campoAlvo.get()
-    substituto = campoSubstituto.get()
-    frase = frase.replace(alvo, substituto)
-    inverted["text"] = frase
+    inverted["text"] = campoFrase.get().replace(campoAlvo.get(), campoSubstituto.get())
 
     
 def limpar():
@@ -16,7 +12,7 @@ def limpar():
 
 
 janela = tk.Tk()
-janela.geometry("500x300")
+janela.geometry("400x300")
 janela.title("Text Inverter")
 janela.resizable(False, False)
 
