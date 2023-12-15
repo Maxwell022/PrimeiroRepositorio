@@ -4,6 +4,6 @@
 Projeto de uma Calculadora de números fetorias usando python 
 
 #Funcionamento 
--função calculo, calculo o número digitado no campoText
+-função calculo, calcula o número digitado no campoText
 
 
