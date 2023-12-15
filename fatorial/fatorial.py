@@ -8,10 +8,17 @@ def calculo():
         fat = fat*i
         i += 1
     inverted.config(text=f"O valor de {n}! = {fat}")
+    limpar()
+
+def limpar():
+    lista = [campoText]
+
+    for input in lista:
+        input.delete(0, tk.END)
 
 
 janela = tk.Tk()
-janela.geometry("500x500")
+janela.geometry("320x180")
 janela.title("Text Inverter")
 janela.resizable(False, False)
 
@@ -28,7 +35,10 @@ campoText = tk.Entry(width = 12, font = ("comic sans", 14))
 campoText.grid(column = 1, row = 0)
 
 
-bInverter = tk.Button(janela, text = "OK", command = calculo, width = 10, font = ("comic sans", 14))
+bInverter = tk.Button(janela, text = "OK", bg = "yellow", command = calculo, width = 10, font = ("comic sans", 14, ))
 bInverter.grid(column = 1, row = 2)
+
+bLimpar = tk.Button(janela, text = "Limpar", command = limpar, width = 10, font = ("comic sans", 14))
+bLimpar.grid(column = 0, row = 2)
 
 janela.mainloop()
