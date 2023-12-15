@@ -7,7 +7,7 @@ def calculo():
     while i <= n:
         fat = fat*i
         i += 1
-    inverted.config(text=f"O valor de {n}! = {fat}")
+    inverted["text"] = f"O valor de {n}! = {fat}"
     limpar()
 
 def limpar():
@@ -18,7 +18,7 @@ def limpar():
 
 
 janela = tk.Tk()
-janela.geometry("320x180")
+janela.geometry("400x180")
 janela.title("Text Inverter")
 janela.resizable(False, False)
 
