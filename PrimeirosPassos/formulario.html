@@ -25,10 +25,31 @@
             <input type="tel" name="telefone" id="telefone"><br/>
 
             <label for="numero">Numero de filhos</label>
-            <input type="number" >
+            <input type="number" min="0" max="32"><br/>
+            <hr>
+            <input type="file"><br/>
+            <p>Escolha uma cor</p>
+
+            <input type="radio" id = "cor-vermelho" name = "cor"><label for="cor-vermelho">Vermelho</label><br/>
+            <input type="radio" id = "cor-roxa" name = "cor"><label for="cor-roxa">Roxo</label><br/>
+            <input type="radio" id = "cor-azul" name = "cor"><label for="cor-azul">Azul</label><br/>
+            <input type="radio" id = "cor-amarelo" name = "cor"><label for="cor-amarelo">Amarelo</label><br>
+            
+            <label for="">Qual a resposta correta?</label><br/>
+            <select multiple id = "resposta">
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+            </select><br>
+            <textarea id="descricao" cols="30" rows="10" placeholder=""></textarea><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
         </form>
     </main>
     <FOOter>
+        <hr/>
         &COPY; 2023 - Todos os direitos reservados
     </FOOter>
 </body>
