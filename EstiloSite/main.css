@@ -99,3 +99,24 @@ section h2, .articles article{
 #street{
     background-color: rgba(221, 8, 107, 0.336);
 }
+
+@media screen and (max-width: 640px){
+    .container{
+        background-color: rgb(20, 220, 37);
+    }
+    .articles article{
+        width: 90%;
+    }    
+}
+
+@media screen  and (min-width: 641px) and (max-width: 1365){
+    .container{
+        background-color: blue;
+    }    
+}
+
+@media screen and (orientation:portrait){
+    .container{
+        background-color: chartreuse;
+    }
+}
